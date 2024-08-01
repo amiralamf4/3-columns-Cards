@@ -1,0 +1,127 @@
+*{
+    --orange:hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lexend Deca','Big Shoulders Display';
+}
+  
+body {
+    height: 100vh;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+  
+main{
+    max-width: 80vw;
+    height: 570px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 10px;
+      
+}
+#orange{
+    background-color: var(--orange);
+}
+
+#dark-cyan{
+    background-color: var(--dark-cyan);
+}
+#very-dark-cyan{
+    background-color: var(--very-dark-cyan);
+}
+  
+#orange a{
+    color: var(--orange);
+}
+#a1:hover{
+    background:none;
+    color: white;
+    border: 2px solid white;
+}
+#dark-cyan a{
+    color: var(--dark-cyan);
+}
+#a2:hover{
+    background:none;
+    color: white;
+    border: 2px solid white;
+}
+#very-dark-cyan a{
+    color: var(--very-dark-cyan);
+}
+#a3:hover{
+    background:none;
+    color: white;
+    border: 2px solid white;
+}
+.card img{
+    width: 60px;
+      
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem; 
+    justify-content: space-between;
+    align-items: start;
+    color: hsl(0, 0%, 95%);
+}
+  
+.card h2{
+    margin-top: 2rem;
+    font-family: Big Shoulders Display;
+    font-size: 2rem;
+    padding-right: 190px;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.card p{
+    padding-right: 0.9vw;
+    text-align: left;
+    font-size: 1.1rem;
+    word-spacing: 2px;
+    line-height: 31px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+  
+.card a{
+    background-color: aliceblue;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 20px;
+    padding-inline: 40px;
+    width: auto;
+    font-size: 1rem;
+    font-family: Lexend Deca;
+    font-weight: 500;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: auto;
+}
+  
+  
+ 
+@media (max-width: 800px){
+    main{
+    grid-template-columns: repeat(1, 1fr);
+    height: 95%;
+    }
+    .card h2{
+        margin-bottom: 1.3rem;
+    }
+    .card p{
+        margin-bottom: 3.5vw;
+         
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+  }
